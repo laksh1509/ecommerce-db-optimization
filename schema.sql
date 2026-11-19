@@ -21,7 +21,7 @@ CREATE TABLE orders (
     customer_id  INT NOT NULL REFERENCES customers(customer_id),
     order_date   DATE NOT NULL,
     status       TEXT NOT NULL
-);
+);  
 
 CREATE TABLE order_items (
     order_id     INT NOT NULL REFERENCES orders(order_id),
